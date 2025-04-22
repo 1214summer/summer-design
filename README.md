@@ -1,54 +1,31 @@
-# React + TypeScript + Vite
+# Summer-design
+一个供自己使用的从0开始的react组件库
+## 使用技术栈
+- 包管理器：npm
+- 框架： react
+- css预处理语言：sass
+- 组件库参考：antd
+- 打包：vite
+- 项目文档: storybook
+- 代码规范工具链：eslint + prittier + stylelint
+- git提交规范链： husky + commitlint + lint-staged
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 使用指南
+请稍等
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 待做List
+✅已完成 ⭐️还在完善 ❌未做
+### 通用
+- Button 按钮 ❌
+- Icon 图标 ❌
+- Menu导航菜单 ❌
+### 表单
+- Input 输入框 ❌
+- AutoComplete 自动补全输入 ❌
+- Upload 拖拽上传 ❌
+- Progress 进度条 ❌
+- Form 表单 ❌
+### 交互
+- Transition 动画过渡 ❌
+- Dialog 弹框 ❌
+- Message 全局提示 ❌

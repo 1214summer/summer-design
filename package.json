@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "prepare": "husky install",
-    "lint:lint-staged": "lint-staged" 
+    "lint:lint-staged": "lint-staged"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
@@ -28,6 +28,8 @@
     ]
   },
   "dependencies": {
+    "eslint-plugin-react-dom": "^1.48.4",
+    "eslint-plugin-react-x": "^1.48.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
