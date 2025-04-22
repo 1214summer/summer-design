@@ -6,6 +6,7 @@
 - css预处理语言：sass
 - 组件库参考：antd
 - 打包：vite
+- 测试：vitest
 - 项目文档: storybook
 - 代码规范工具链：eslint + prittier + stylelint
 - git提交规范链： husky + commitlint + lint-staged
