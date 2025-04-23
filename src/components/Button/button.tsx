@@ -1,5 +1,6 @@
 import classNames from 'classnames'
 export type ButtonSize = 'lg' | 'sm';
+import React, {FC} from 'react'
 export type ButtonType = 'primary' | 'default' | 'danger' | 'link'
 interface BaseButtonProps {
     //className
@@ -20,7 +21,7 @@ type NativeButtonProps = BaseButtonProps & React.ButtonHTMLAttributes<HTMLElemen
 type AnchorButtonProps = BaseButtonProps & React.AnchorHTMLAttributes<HTMLElement>
 export type ButtonProps = Partial< NativeButtonProps & AnchorButtonProps>
 
-export const Button: React.FC<ButtonProps> = ({
+export const Button: FC<ButtonProps> = ({
     className,
     disabled = false,
     size,
@@ -47,12 +48,13 @@ export const Button: React.FC<ButtonProps> = ({
         )
     }else{
         return(
+            // eslint-disable-next-line react-dom/no-missing-button-type
             <button
-            {...restProps}
-            className={classes}
-            disabled = {disabled}
+                className={classes}
+                disabled = {disabled}
+                {...restProps}
             >
-            {children}
+                {children}
             </button>
         )
     }

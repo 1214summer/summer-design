@@ -42,7 +42,7 @@ export default defineConfig({
       preprocessorOptions: {
         scss: {
           // 全局注入 SCSS 变量
-          additionalData: `@import "@/styles/variables.scss";`,
+          additionalData: `@import "@/styles/variable";`,
         },
       },
     },
