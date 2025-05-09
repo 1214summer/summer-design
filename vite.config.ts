@@ -10,7 +10,7 @@ export default defineConfig({
 
     // 基础路径，用于部署在子路径时使用
     base: '/my-app/',
-  
+
     // 开发服务器配置
     server: {
       // 指定开发服务器端口
@@ -35,18 +35,18 @@ export default defineConfig({
           '@': path.resolve(__dirname, './src'), // 将 @ 映射到 src 目录
         },
       },
-    
+
     // CSS 配置
     css: {
       // 配置 CSS 预处理器选项
       preprocessorOptions: {
         scss: {
           // 全局注入 SCSS 变量
-          additionalData: `@import "@/styles/variable";`,
+          additionalData: `@import "@/styles/index.scss";`,
         },
       },
     },
-  
+
     // 环境变量配置
     envPrefix: 'VITE_', // 环境变量前缀，默认为 VITE_
 
