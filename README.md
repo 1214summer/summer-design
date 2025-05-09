@@ -18,8 +18,8 @@
 ✅已完成 ⭐️还在完善 ❌未做
 ### 通用
 - Button 按钮 ✅
-- Icon 图标 ❌
-- Menu导航菜单 ❌
+- Icon 图标 ✅
+- Menu导航菜单 ✅
 ### 表单
 - Input 输入框 ❌
 - AutoComplete 自动补全输入 ❌
@@ -27,6 +27,6 @@
 - Progress 进度条 ❌
 - Form 表单 ❌
 ### 交互
-- Transition 动画过渡 ❌
+- Transition 动画过渡 ✅
 - Dialog 弹框 ❌
 - Message 全局提示 ❌
